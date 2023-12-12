@@ -1,18 +1,24 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 import ApplicationLogo from '@/Components/ApplicationLogo.vue';
 import Dropdown from '@/Components/Dropdown.vue';
 import DropdownLink from '@/Components/DropdownLink.vue';
 import NavLink from '@/Components/NavLink.vue';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
-import { Link } from '@inertiajs/vue3';
 
 const showingNavigationDropdown = ref(false);
+const props = defineProps<{
+    bgColor?: string;
+}>();
+
+const backgroundColor = computed(() => {
+    return props.bgColor || 'dark:bg-gray-900';
+});
 </script>
 
 <template>
     <div>
-        <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
+        <div class="min-h-screen bg-gray-100" :class="backgroundColor">
             <nav class="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700">
                 <!-- Primary Navigation Menu -->
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -20,17 +26,26 @@ const showingNavigationDropdown = ref(false);
                         <div class="flex">
                             <!-- Logo -->
                             <div class="shrink-0 flex items-center">
-                                <Link :href="route('dashboard')">
+                                <a href="/">
                                     <ApplicationLogo
                                         class="block h-9 w-auto fill-current text-gray-800 dark:text-gray-200"
                                     />
-                                </Link>
+                                </a>
                             </div>
 
                             <!-- Navigation Links -->
                             <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                                 <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
-                                    Dashboard
+                                    Smiley Dashboard
+                                </NavLink>
+                                <NavLink :href="route('booking')" :active="route().current('booking')">
+                                    Room Booking 
+                                </NavLink>
+                                <NavLink :href="route('triangle')" :active="route().current('triangle')">
+                                    Triangle Heaven
+                                </NavLink>
+                                <NavLink :href="route('travel')" :active="route().current('travel')">
+                                    Travel Kilometers
                                 </NavLink>
                             </div>
                         </div>
@@ -116,6 +131,21 @@ const showingNavigationDropdown = ref(false);
                             Dashboard
                         </ResponsiveNavLink>
                     </div>
+                    <div class="pt-2 pb-3 space-y-1">
+                        <ResponsiveNavLink :href="route('booking')" :active="route().current('booking')">
+                            Room Booking
+                        </ResponsiveNavLink>
+                    </div>
+                    <div class="pt-2 pb-3 space-y-1">
+                        <ResponsiveNavLink :href="route('triangle')" :active="route().current('triangle')">
+                            Triangle Heaven
+                        </ResponsiveNavLink>
+                    </div>
+                    <div class="pt-2 pb-3 space-y-1">
+                        <ResponsiveNavLink :href="route('travel')" :active="route().current('travel')">
+                            Travel Kilometers
+                        </ResponsiveNavLink>
+                    </div>
 
                     <!-- Responsive Settings Options -->
                     <div class="pt-4 pb-1 border-t border-gray-200 dark:border-gray-600">
@@ -136,17 +166,20 @@ const showingNavigationDropdown = ref(false);
                 </div>
             </nav>
 
-            <!-- Page Heading -->
-            <header class="bg-white dark:bg-gray-800 shadow" v-if="$slots.header">
-                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                    <slot name="header" />
-                </div>
-            </header>
 
             <!-- Page Content -->
             <main>
                 <slot />
             </main>
+            
+            <!-- Page Footer -->
+            <footer class="fixed bottom-0 left-1/2 transform -translate-x-1/2 dark:bg-blue-900 hover:dark:bg-blue-500 shadow flex justify-center items-center w-full" v-if="$slots.footer">
+                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                    <h1 class="text-2xl font-semibold text-gray-900">
+                        <slot name="footer" />
+                    </h1>
+                </div>
+            </footer>
         </div>
     </div>
 </template>

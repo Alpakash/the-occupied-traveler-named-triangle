@@ -1,7 +1,7 @@
-# the-occupied-traveler-named-triangle
-Making an assignment which checks the occupation, travel info and uses some cool triangles.
+# The Occupied Traveler named Triangle
+Making an assignment which checks the occupation, travel info and whilst showing some cool triangles.
 
-Steps taken:
+# Downloaded and Installed
 - Download and install
     - PHP 8.3.0
     - Composer
@@ -11,6 +11,7 @@ Steps taken:
     - sqlite3
     - Inertia to couple Laravel with Vue 3
     - Pest (unit testing)
+    - library: font awesome svg icons for vue
 
 # How to Install the application
     - yarn install
@@ -20,13 +21,17 @@ Steps taken:
 # Guidance
     - Routes
         - There are three routes where the cases will live
-        
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+
+# Changelog
+ - 12-12-2023
+    - Added a dashboard
+    - Added a footer to the dashboard with dynamic name
+    - Added 4 stats to the dashboard without data
+    - Made the Navigation links
+    - Generated an AI vector smiley with a triangle nose
+    - Created Welcome page with introduction texts
+    - Added some rick roll
+    - Added routes for the cases
 
 ## About Laravel
 
@@ -40,7 +45,9 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 - [Robust background job processing](https://laravel.com/docs/queues).
 - [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>

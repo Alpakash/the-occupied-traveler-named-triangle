@@ -33,6 +33,18 @@ Route::get('/user', function () {
     return Inertia::render('User/UserComponent');
 });
 
+Route::get('/booking', function () {
+    return Inertia::render('Booking');
+})->middleware(['auth', 'verified'])->name('booking');;
+
+Route::get('/triangle', function () {
+    return Inertia::render('Triangle');
+})->middleware(['auth', 'verified'])->name('triangle');;
+
+Route::get('/travel', function () {
+    return Inertia::render('Travel');
+})->middleware(['auth', 'verified'])->name('travel');;
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

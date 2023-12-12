@@ -12,6 +12,15 @@ Steps taken:
     - Inertia to couple Laravel with Vue 3
     - Pest (unit testing)
 
+# How to Install the application
+    - yarn install
+    - yarn dev
+    - php artisan serve
+
+# Guidance
+    - Routes
+        - There are three routes where the cases will live
+        
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>

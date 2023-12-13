@@ -8,6 +8,7 @@ import { ZiggyVue } from '../../vendor/tightenco/ziggy/dist/vue.m';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCalendarCheck, faTriangleCircleSquare } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { MotionPlugin } from '@vueuse/motion'
 
 library.add(faCalendarCheck, faTriangleCircleSquare);
 
@@ -21,6 +22,8 @@ createInertiaApp({
             .use(plugin)
             .use(ZiggyVue, Ziggy);
         app.component('font-awesome-icon', FontAwesomeIcon);
+        app.use(MotionPlugin)
+
         app.mount(el);
 
     },

@@ -11,7 +11,8 @@ Making an assignment which checks the occupation, travel info and whilst showing
     - sqlite3
     - Inertia to couple Laravel with Vue 3
     - Pest (unit testing)
-    - library: font awesome svg icons for vue
+    - library: [FortAwesome/vue-fontawesome](https://github.com/FortAwesome/vue-fontawesome)
+    - library: [@vueuse/motion](https://github.com/vueuse/motion)
 
 # How to Install the application
     - yarn install
@@ -19,9 +20,12 @@ Making an assignment which checks the occupation, travel info and whilst showing
     - php artisan serve
 
 # Guidance
+    - The app lives inside the sub-folders inside the resources folder
+        - js: where the components, types and pages live
+        - app.ts: where the vue app is initiated with help of interia.js 
     - Routes
         - There are three routes where the cases will live
-
+    
 # Changelog
  - 12-12-2023
     - Added a dashboard

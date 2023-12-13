@@ -12,8 +12,16 @@
         "noEmit": true,
         "skipLibCheck": true,
         "paths": {
-            "@/*": ["./resources/js/*"]
+            "@/*": [
+                "./resources/js/*"
+            ]
         }
     },
-    "include": ["resources/js/**/*.ts", "resources/js/**/*.d.ts", "resources/js/**/*.vue"]
+    "include": [
+        "resources/js/**/*.ts",
+        "resources/js/**/*.d.ts",
+        "resources/js/**/*.vue",
+        "node_modules/@vueuse/motion",
+        "node_modules/@fortawesome/vue-fontawesome",
+    ]
 }

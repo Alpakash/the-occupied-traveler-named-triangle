@@ -1,7 +1,7 @@
 # The Occupied Traveler named Triangle
 Making an assignment which checks the occupation, travel info and whilst showing some cool triangles.
 
-# Downloaded and Installed
+# Newly Downloaded and Installed tools I've never really used extensively commercially before :)  
 - Download and install
     - PHP 8.3.0
     - Composer
@@ -13,6 +13,8 @@ Making an assignment which checks the occupation, travel info and whilst showing
     - Pest (unit testing)
     - library: [FortAwesome/vue-fontawesome](https://github.com/FortAwesome/vue-fontawesome)
     - library: [@vueuse/motion](https://github.com/vueuse/motion)
+    - Tailwind CSS
+    - library: [vue-confetti-explosion](https://github.com/valgeirb/vue-confetti-explosion)
 
 # How to Install the application
     - yarn install
@@ -36,6 +38,18 @@ Making an assignment which checks the occupation, travel info and whilst showing
     - Created Welcome page with introduction texts
     - Added some rick roll
     - Added routes for the cases
+
+- 13-12-2023
+    - Added CaseTitleHeader
+    - Added MotionPlugin for component animations
+    - Added confetti easter egg
+    - Added sticky footer with 4 columns
+    - Added sidebar with dummy text
+    - Put Case Pages in their destined folder
+    - Build the page with Adventurer Triangle
+    - Added Footer icon
+    - Added polygon according to the viewport
+    
 
 ## About Laravel
 

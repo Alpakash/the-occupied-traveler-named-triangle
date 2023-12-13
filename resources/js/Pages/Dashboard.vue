@@ -9,7 +9,7 @@ const user = usePage().props.auth.user;
     <Head title="Dashboard" />
     <AuthenticatedLayout>
         <template #footer>
-            <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">Hello {{ user.name }}. Welcome to your dashboard!</h2>
+            <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight select-none">Hello {{ user.name }}. Welcome to your <strong class="bg-purple-300 text-black">smiley</strong> dashboard! :)</h2>
         </template>
         <div class="grid grid-cols-2 justify-items-center mx-auto w-full lg:w-1/2 mt-32">
             <Link href='/dashboard'><div class="bg-purple-300 dashboard-statistics smile-hover">Smiles given...</div></Link>

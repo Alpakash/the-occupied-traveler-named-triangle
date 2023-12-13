@@ -27,7 +27,7 @@ const backgroundColor = computed(() => {
                 ease: 'easeIn',
             }
 }">
-            <nav class="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700">
+            <nav class="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700 relative z-10">
                 <!-- Primary Navigation Menu -->
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="flex justify-between h-16">
@@ -158,7 +158,19 @@ const backgroundColor = computed(() => {
 
             <!-- Page Footer -->
             <footer
-                class="fixed bottom-0 left-1/2 transform -translate-x-1/2 dark:bg-blue-900 hover:dark:bg-blue-500 shadow flex justify-center items-center w-full"
+            :initial="{
+                    y: 100,
+                }"
+                :enter="{
+                    y: 0,
+                    transition: {
+                        duration: 1000,
+                        type: 'keyframes',
+                        ease: 'easeIn',
+                    },
+                }"
+                v-motion
+                class="fixed bottom-0 transform -translate-x-1/2 dark:bg-blue-900 shadow flex justify-center items-center w-full"
                 v-if="$slots.footer">
                 <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
                     <h1 class="text-2xl font-semibold text-gray-900">

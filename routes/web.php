@@ -34,15 +34,15 @@ Route::get('/user', function () {
 });
 
 Route::get('/booking', function () {
-    return Inertia::render('Booking');
+    return Inertia::render('Cases/Booking');
 })->middleware(['auth', 'verified'])->name('booking');;
 
 Route::get('/triangle', function () {
-    return Inertia::render('Triangle');
+    return Inertia::render('Cases/Triangle');
 })->middleware(['auth', 'verified'])->name('triangle');;
 
 Route::get('/travel', function () {
-    return Inertia::render('Travel');
+    return Inertia::render('Cases/Travel');
 })->middleware(['auth', 'verified'])->name('travel');;
 
 Route::middleware('auth')->group(function () {

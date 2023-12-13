@@ -13,14 +13,16 @@ defineProps<{
     <Head title="Welcome" />
 
     <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white"
-        v-motion-fade :initial="{
+        v-motion-fade 
+        :initial="{
             opacity: 0.4, scale: 1
-        }" :enter="{
-    opacity: 1, scale: 1, transition: {
-        duration: 300,
-        type: 'keyframes',
-        ease: 'easeIn',
-    }
+        }" 
+        :enter="{
+            opacity: 1, scale: 1, transition: {
+                duration: 300,
+                type: 'keyframes',
+                ease: 'easeIn',
+            }
 }">
         <div v-if="canLogin" class="sm:fixed sm:top-0 sm:right-0 p-6 text-end">
             <Link v-if="$page.props.auth.user" :href="route('dashboard')"

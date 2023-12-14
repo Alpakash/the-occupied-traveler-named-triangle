@@ -29,7 +29,12 @@ Making an assignment which checks the occupation, travel info and whilst showing
         - There are three routes where the cases will live
     
 # Changelog
- - 12-12-2023
+ - 11-11-2023, Day 1
+    - Setup the repository
+    - Installing the tools and software
+    - Added Starters kit: Laravel, VueJs & InteriaJs 
+
+ - 12-12-2023, Day 2
     - Added a dashboard
     - Added a footer to the dashboard with dynamic name
     - Added 4 stats to the dashboard without data
@@ -39,7 +44,7 @@ Making an assignment which checks the occupation, travel info and whilst showing
     - Added some rick roll
     - Added routes for the cases
 
-- 13-12-2023
+- 13-12-2023, Day 3
     - Added CaseTitleHeader
     - Added MotionPlugin for component animations
     - Added confetti easter egg
@@ -49,7 +54,10 @@ Making an assignment which checks the occupation, travel info and whilst showing
     - Build the page with Adventurer Triangle
     - Added Footer icon
     - Added polygon according to the viewport
-    
+
+- 14-12-2023, Day 4
+    - Added sidebar with interactions
+    - 
 
 ## About Laravel
 

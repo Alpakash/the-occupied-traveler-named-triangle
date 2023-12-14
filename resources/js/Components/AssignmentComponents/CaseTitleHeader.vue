@@ -16,7 +16,7 @@ const visible = ref(false);
   };
 </script>
 
-<template class="overflow-visible">
+<template>
     <h1 class="text-3xl">
         <div 
             @click="explode"
@@ -31,8 +31,8 @@ const visible = ref(false);
                 opacity: 1,
                 y: 0,
                 transition: {
-                    delay: 1000,
-                    duration: 300,
+                    delay: 200,
+                    duration: 1500,
                     type: 'keyframes',
                     ease: 'easeIn',
                 },
@@ -46,10 +46,10 @@ const visible = ref(false);
 
     <ConfettiExplosion
         v-if="visible"
-        :particleCount="150"
+        :particleCount="100"
         :force="0.5"
-        :stageHeight="800"
-        :stageWidth="3600"
+        :stageHeight="1000"
+        :stageWidth="3200"
         :particleSize="21" 
     />
 </template>

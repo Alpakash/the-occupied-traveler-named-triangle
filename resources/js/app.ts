@@ -9,6 +9,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCalendarCheck, faTriangleCircleSquare, faShoePrints } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { MotionPlugin } from '@vueuse/motion'
+import { createStore } from 'vuex';
 
 library.add(
     faCalendarCheck,
@@ -18,18 +19,28 @@ library.add(
 
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 
+const store = createStore({
+    state: {
+      count: 0
+    },
+    mutations: {
+      incrementCount(state) {
+        state.count++;
+      }
+    }
+  });
+
 createInertiaApp({
     title: (title) => `${title} - ${appName}`,
     resolve: (name) => resolvePageComponent(`./Pages/${name}.vue`, import.meta.glob<DefineComponent>('./Pages/**/*.vue')),
     setup({ el, App, props, plugin }) {
         const app = createApp({ render: () => h(App, props) })
             .use(plugin)
-            .use(ZiggyVue, Ziggy);
+            .use(ZiggyVue, Ziggy)
         app.component('font-awesome-icon', FontAwesomeIcon);
         app.use(MotionPlugin)
-
+        app.use(store)
         app.mount(el);
-
     },
     progress: {
         color: '#4B5563',

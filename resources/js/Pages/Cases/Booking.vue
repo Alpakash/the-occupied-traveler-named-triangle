@@ -8,7 +8,7 @@ import { Head } from '@inertiajs/vue3';
 <template>
     <Head title="Booking" />
     <AuthenticatedLayout bgColor='bg-red-300'>
-        <CaseTitleHeader bgColor='bg-red'>
+        <CaseTitleHeader bgColor='bg-red-400' bgColorHover='bg-red-500'>
             <font-awesome-icon icon="calendar-check" /> Booking 
         </CaseTitleHeader>
     </AuthenticatedLayout>

@@ -7,7 +7,7 @@ import { Head } from '@inertiajs/vue3';
 <template>
     <Head title="Travel" />
     <AuthenticatedLayout bgColor='bg-yellow-300'>
-        <CaseTitleHeader bgColor='bg-yellow'>
+        <CaseTitleHeader bgColor='bg-yellow-400' bgColorHover='bg-yellow-500'>
             <font-awesome-icon icon="shapes" /> Travel 
         </CaseTitleHeader>
     </AuthenticatedLayout>

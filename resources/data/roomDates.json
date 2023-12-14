@@ -1,0 +1,400 @@
+{
+  "roomDates": [
+    {
+      "roomLocation": "Amsterdam",
+      "dates": [
+        {
+          "date": "2023-12-11",
+          "booked": null
+        },
+        {
+          "date": "2023-12-12",
+          "booked": true
+        },
+        {
+          "date": "2023-12-13",
+          "booked": null
+        },
+        {
+          "date": "2023-12-14",
+          "booked": null
+        },
+        {
+          "date": "2023-12-15",
+          "booked": null
+        },
+        {
+          "date": "2023-12-16",
+          "booked": true
+        },
+        {
+          "date": "2023-12-17",
+          "booked": true
+        }
+      ]
+    },
+    {
+      "roomLocation": "Belgium",
+      "dates": [
+        {
+          "date": "2023-12-11",
+          "booked": null
+        },
+        {
+          "date": "2023-12-12",
+          "booked": true
+        },
+        {
+          "date": "2023-12-13",
+          "booked": true
+        },
+        {
+          "date": "2023-12-14",
+          "booked": true
+        },
+        {
+          "date": "2023-12-15",
+          "booked": null
+        },
+        {
+          "date": "2023-12-16",
+          "booked": null
+        },
+        {
+          "date": "2023-12-17",
+          "booked": null
+        }
+      ]
+    },
+    {
+      "roomLocation": "Canada",
+      "dates": [
+        {
+          "date": "2023-12-11",
+          "booked": true
+        },
+        {
+          "date": "2023-12-12",
+          "booked": true
+        },
+        {
+          "date": "2023-12-13",
+          "booked": true
+        },
+        {
+          "date": "2023-12-14",
+          "booked": true
+        },
+        {
+          "date": "2023-12-15",
+          "booked": true
+        },
+        {
+          "date": "2023-12-16",
+          "booked": true
+        },
+        {
+          "date": "2023-12-17",
+          "booked": true
+        }
+      ]
+    },
+    {
+      "roomLocation": "Denmark",
+      "dates": [
+        {
+          "date": "2023-12-11",
+          "booked": true
+        },
+        {
+          "date": "2023-12-12",
+          "booked": null
+        },
+        {
+          "date": "2023-12-13",
+          "booked": null
+        },
+        {
+          "date": "2023-12-14",
+          "booked": true
+        },
+        {
+          "date": "2023-12-15",
+          "booked": null
+        },
+        {
+          "date": "2023-12-16",
+          "booked": true
+        },
+        {
+          "date": "2023-12-17",
+          "booked": null
+        }
+      ]
+    },
+    {
+      "roomLocation": "England",
+      "dates": [
+        {
+          "date": "2023-12-11",
+          "booked": true
+        },
+        {
+          "date": "2023-12-12",
+          "booked": true
+        },
+        {
+          "date": "2023-12-13",
+          "booked": true
+        },
+        {
+          "date": "2023-12-14",
+          "booked": null
+        },
+        {
+          "date": "2023-12-15",
+          "booked": null
+        },
+        {
+          "date": "2023-12-16",
+          "booked": null
+        },
+        {
+          "date": "2023-12-17",
+          "booked": null
+        }
+      ]
+    },
+    {
+      "roomLocation": "France",
+      "dates": [
+        {
+          "date": "2023-12-11",
+          "booked": true
+        },
+        {
+          "date": "2023-12-12",
+          "booked": true
+        },
+        {
+          "date": "2023-12-13",
+          "booked": null
+        },
+        {
+          "date": "2023-12-14",
+          "booked": null
+        },
+        {
+          "date": "2023-12-15",
+          "booked": true
+        },
+        {
+          "date": "2023-12-16",
+          "booked": true
+        },
+        {
+          "date": "2023-12-17",
+          "booked": true
+        }
+      ]
+    },
+    {
+      "roomLocation": "Barcelona",
+      "dates": [
+        {
+          "date": "2023-12-11",
+          "booked": true
+        },
+        {
+          "date": "2023-12-12",
+          "booked": true
+        },
+        {
+          "date": "2023-12-13",
+          "booked": true
+        },
+        {
+          "date": "2023-12-14",
+          "booked": null
+        },
+        {
+          "date": "2023-12-15",
+          "booked": true
+        },
+        {
+          "date": "2023-12-16",
+          "booked": true
+        },
+        {
+          "date": "2023-12-17",
+          "booked": true
+        }
+      ]
+    },
+    {
+      "roomLocation": "Egypt",
+      "dates": [
+        {
+          "date": "2023-12-11",
+          "booked": true
+        },
+        {
+          "date": "2023-12-12",
+          "booked": true
+        },
+        {
+          "date": "2023-12-13",
+          "booked": null
+        },
+        {
+          "date": "2023-12-14",
+          "booked": null
+        },
+        {
+          "date": "2023-12-15",
+          "booked": null
+        },
+        {
+          "date": "2023-12-16",
+          "booked": null
+        },
+        {
+          "date": "2023-12-17",
+          "booked": null
+        }
+      ]
+    },
+    {
+      "roomLocation": "Russia",
+      "dates": [
+        {
+          "date": "2023-12-11",
+          "booked": null
+        },
+        {
+          "date": "2023-12-12",
+          "booked": null
+        },
+        {
+          "date": "2023-12-13",
+          "booked": null
+        },
+        {
+          "date": "2023-12-14",
+          "booked": null
+        },
+        {
+          "date": "2023-12-15",
+          "booked": null
+        },
+        {
+          "date": "2023-12-16",
+          "booked": null
+        },
+        {
+          "date": "2023-12-17",
+          "booked": null
+        }
+      ]
+    },
+    {
+      "roomLocation": "Germany",
+      "dates": [
+        {
+          "date": "2023-12-11",
+          "booked": true
+        },
+        {
+          "date": "2023-12-12",
+          "booked": true
+        },
+        {
+          "date": "2023-12-13",
+          "booked": true
+        },
+        {
+          "date": "2023-12-14",
+          "booked": true
+        },
+        {
+          "date": "2023-12-15",
+          "booked": true
+        },
+        {
+          "date": "2023-12-16",
+          "booked": true
+        },
+        {
+          "date": "2023-12-17",
+          "booked": true
+        }
+      ]
+    },
+    {
+      "roomLocation": "Africa",
+      "dates": [
+        {
+          "date": "2023-12-11",
+          "booked": null
+        },
+        {
+          "date": "2023-12-12",
+          "booked": null
+        },
+        {
+          "date": "2023-12-13",
+          "booked": true
+        },
+        {
+          "date": "2023-12-14",
+          "booked": null
+        },
+        {
+          "date": "2023-12-15",
+          "booked": true
+        },
+        {
+          "date": "2023-12-16",
+          "booked": true
+        },
+        {
+          "date": "2023-12-17",
+          "booked": null
+        }
+      ]
+    },
+    {
+      "roomLocation": "Turkey",
+      "dates": [
+        {
+          "date": "2023-12-11",
+          "booked": null
+        },
+        {
+          "date": "2023-12-12",
+          "booked": null
+        },
+        {
+          "date": "2023-12-13",
+          "booked": true
+        },
+        {
+          "date": "2023-12-14",
+          "booked": true
+        },
+        {
+          "date": "2023-12-15",
+          "booked": true
+        },
+        {
+          "date": "2023-12-16",
+          "booked": true
+        },
+        {
+          "date": "2023-12-17",
+          "booked": null
+        }
+      ]
+    }
+  ]
+}

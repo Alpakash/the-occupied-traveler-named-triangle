@@ -3,14 +3,14 @@
     <div>
       <h2 class="text-2xl mb-5">Sidebar</h2>
       <ul class="list-none text-left">
-        <li class="mb-10 select-none flex">
+        <li class="mb-10 select-none flex flex-wrap">
           <svg @click="incrementCount" class="mr-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
             viewBox="0 0 20 20">
             <polygon points="10,0 20,20 0,20" fill="black" />
           </svg>
           Triangles Clicked: <strong class="ml-2">{{ count }}</strong>
         </li>
-        <li class="mb-10 select-none flex">
+        <li class="mb-10 select-none flex flex-wrap">
           <svg @click="colorChange" class="mr-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
             viewBox="0 0 20 20">
             <rect width="20" height="20" :fill="rectColor" />

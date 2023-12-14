@@ -57,7 +57,21 @@ Making an assignment which checks the occupation, travel info and whilst showing
 
 - 14-12-2023, Day 4
     - Added sidebar with interactions
-    - 
+    - Added typescript
+    - Added VueX State
+    - bug fix: header background color wasn't changing consistently onHover
+    - added a logo to the Welcome page
+    - Added content to the footer
+    - Added content to the sidebar
+    - Added some cat magic
+    - Added the fake data inside roomDates.json
+    - Made the Triangle page mobile responsive
+    - Added datepicker library
+    - Added all the crazy logic for the Booking page
+        - Show all available or booked spots
+        - Show the first booked spot in green
+        - Added room location selector 
+
 
 ## About Laravel
 

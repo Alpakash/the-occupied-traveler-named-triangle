@@ -17,7 +17,7 @@
           </svg>
           Previously clicked color: <strong class="ml-2">{{ previousColor }}</strong>
         </li>
-        <!-- <li class="mb-10">Social Media Links</li> TODO: Add Links -->
+        <button @click="resetCount">abc</button>
       </ul>
     </div>
   </div>
@@ -37,7 +37,11 @@ export default defineComponent({
       store.commit('incrementCount');
     };
 
-    return { count, incrementCount };
+    const resetCount = () => {
+      store.commit('resetCount');
+    }
+
+    return { count, incrementCount, resetCount };
   },
   data() {
     return {

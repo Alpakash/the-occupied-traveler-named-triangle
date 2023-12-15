@@ -27,12 +27,29 @@ I've created this app in 5 days, spending a few hours each, after working hours.
 
 I hope you like the app which tells the story of a traveler named Triangle who is searching for a place to stay.
 
-## Explain
-- The app lives inside the sub-folders inside the resources folder
-    - js: where the components, types and pages live
-    - app.ts: where the vue app is initiated with help of inertia.js 
+## Folder structure explained
+There are many folders and files which are created by the Laravel Starters Kit boilerplate.
+Reasons I did make use of this Starter Kit are:
+1. Coupling Laravel and Vue was fairly new to me.
+2. The official Laravel documentation is suggesting to make use of it (including Laravel Breeze to make it a breeze)
+3. Life gets easier. So try to ignore the randomly or not used scaffolded files
+
+- Resources folder and sub-folders
+    - /js: where the components, types and pages live
+        - /Components/Triangle: components used inside the Triangle Page
+        - /Components/AssignmentComponents: components used inside all 3 pages
+        - /Components/Pages/Cases: where the pages of the case live
+        - /types: needed to add some types for a obscure typing error about vue.d.ts
+    - /app.ts:
+        - where the vue app is initiated with help of inertia.js 
+        - loaded plugins
+            - the animations with Motion
+            - vuex store
+            - font-awesome icons
+
 - Routes
-    - There are three routes where the cases will live
+    - There are three routes where the Pages of the cases will live
+        - /booking, /triangle and /travel
 
 - Prerequisites
     - PHP
@@ -44,7 +61,7 @@ I hope you like the app which tells the story of a traveler named Triangle who i
         - yarn install
         - yarn dev
         - php artisan serve
-        - the page can now be visited on `localhost:8000`
+        - the page can now be visited on localhost:8000
 
 # Changelog
  - 11-11-2023, Day 1

@@ -1,9 +1,8 @@
 # Use the official PHP 8.0 FPM image as the base
 FROM php:8.0-fpm
 
-# Install Node.js dependencies
-RUN curl -sL https://deb.nodesource.com/setup_20.x | bash -
-RUN apt-get install -y nodejs
+# Update and install Node.js
+RUN apt-get update && apt-get install nodejs -y
 
 # Install Yarn
 RUN npm install -g yarn
@@ -29,11 +28,10 @@ WORKDIR /var/www/html
 
 # Copy the application files to the container
 COPY . /var/www/html
-COPY composer.json composer.lock /var/www/html/
 
 # Install Composer dependencies
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-RUN composer install --no-dev --optimize-autoloader
+RUN composer clear-cache && composer install --no-dev --optimize-autoloader
 
 # Build the Vite app
 RUN yarn build

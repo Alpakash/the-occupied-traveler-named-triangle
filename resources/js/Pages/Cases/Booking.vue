@@ -58,6 +58,9 @@ const firstBookedDates = computed(() => {
     </div>
 
     <div class="flex justify-center items-center gap-5 mt-10">
+      <div class="flex justify-center items-center text-3xl font-bold">
+        <div>Select date and location </div>
+      </div>
       <select v-model="selectedRoomLocation" class="border border-gray-300 rounded-md p-2 w-1/12">
         <option value="">All</option>
         <option v-for="(room, index) in roomDates.roomDates" :key="index" :value="room.roomLocation">

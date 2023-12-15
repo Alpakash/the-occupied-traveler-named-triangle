@@ -11,6 +11,9 @@ RUN apt-get update && apt-get install -y \
     curl \
     unzip
 
+# Install PHP CLI
+RUN apt-get update && apt-get install -y php-cli
+
 # Install PHP extensions
 RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
 

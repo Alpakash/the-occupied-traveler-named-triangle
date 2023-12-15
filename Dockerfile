@@ -1,8 +1,18 @@
 # Use the official PHP 8.0 FPM image as the base
 FROM php:8.0-fpm
+FROM ubuntu:latest
 
-# Update and install Node.js
-RUN apt-get update && apt-get install nodejs -y
+# Update and install necessary packages
+RUN apt-get update && apt-get install -y ca-certificates curl gnupg
+
+# Add NodeSource GPG key
+RUN curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
+
+# Set Node.js major version
+ARG NODE_MAJOR=20
+
+# Add NodeSource to sources list
+RUN echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_$NODE_MAJOR.x nodistro main" > /etc/apt/sources.list.d/nodesource.list
 
 # Install Yarn
 RUN npm install -g yarn

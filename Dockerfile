@@ -9,7 +9,7 @@ RUN apt-get install -y nodejs
 RUN npm install -g yarn
 
 # Install PHP and Node.js dependencies
-COPY package.json yarn.lock ./
+COPY package.json ./
 RUN yarn install
 
 # Install dependencies
@@ -34,7 +34,7 @@ WORKDIR /var/www/html
 COPY . /var/www/html
 
 # Install Composer dependencies
-COPY composer.json composer.lock ./
+COPY composer.json ./
 RUN composer install -vvv
 
 # Build the Vite app

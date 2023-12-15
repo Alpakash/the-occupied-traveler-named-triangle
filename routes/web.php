@@ -27,19 +27,19 @@ Route::get('/', function () {
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+})->name('dashboard');
 
 Route::get('/booking', function () {
     return Inertia::render('Cases/Booking');
-})->middleware(['auth', 'verified'])->name('booking');;
+})->name('booking');;
 
 Route::get('/triangle', function () {
     return Inertia::render('Cases/Triangle');
-})->middleware(['auth', 'verified'])->name('triangle');;
+})->name('triangle');;
 
 Route::get('/travel', function () {
     return Inertia::render('Cases/Travel');
-})->middleware(['auth', 'verified'])->name('travel');;
+})->name('travel');;
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

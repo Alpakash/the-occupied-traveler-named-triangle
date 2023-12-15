@@ -1,6 +1,17 @@
 # Use the official PHP 8.0 FPM image as the base
 FROM php:8.0-fpm
 
+# Install Node.js dependencies
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
+RUN apt-get install -y nodejs
+
+# Install Yarn
+RUN npm install -g yarn
+
+# Install PHP and Node.js dependencies
+COPY package.json yarn.lock ./
+RUN yarn install
+
 # Install dependencies
 RUN apt-get update && apt-get install -y \
     libpng-dev \
@@ -23,7 +34,11 @@ WORKDIR /var/www/html
 COPY . /var/www/html
 
 # Install Composer dependencies
-RUN composer install
+COPY composer.json composer.lock ./
+RUN composer install -vvv
+
+# Build the Vite app
+RUN yarn build
 
 # Start the Laravel server
 CMD php artisan serve --host=0.0.0.0 --port=8080

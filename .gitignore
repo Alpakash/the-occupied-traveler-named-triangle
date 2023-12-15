@@ -20,3 +20,4 @@ yarn.lock
 /.fleet
 /.idea
 /.vscode
+.vapor/build

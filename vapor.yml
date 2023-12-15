@@ -2,6 +2,11 @@ id: 55545
 name: the-occupied-traveler-named-triangle
 environments:
     production:
+        subnets:
+          - subnet-0b485210d1c74baec
+          - subnet-0ac314adb5381b125
+        security-groups:
+          - sg-0aa448f79fef56bf6
         memory: 1024
         cli-memory: 512
         runtime: 'php-8.2:al2'

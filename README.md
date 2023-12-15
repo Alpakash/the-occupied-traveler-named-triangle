@@ -114,7 +114,20 @@ Reasons I did make use of this Starter Kit are:
     - save the data for the user inside the database with vuex
     - Added vuex-persistedstate instead of using the state from the database
     - Got called in-between, without finishing this application... I got through to the next interview round! ;-)
-    - Deploy the application to https://the-occupied-traveler-named-triangle.onrender.com
+    - Deploy the application to...
+        - Tried to deploy via render.com
+        - Tried to deploy via Vercel
+        - Tried to deploy via Laravel Vapor
+            - created database on Laravel Vapor -> Without success
+            - created MySQL database on AWS to connect to Laravel Vapor production env
+            - Setting up in AWS:
+                - RDS Service
+                - VPC Subnets en Security Groups
+                - User role policies
+                - Making use of Laravel Vapor production.env
+        - failed to push to prod!
+            - "AWS: Error occurred while DescribeSecurityGroups. EC2 Error Code: InvalidGroup.NotFound. EC2 Error Message: The security group 'sg-0aa448f79fef56bf6' does not exist", while I do have the VPC living in the correct region. Weird. I prefer GCP over AWS (because of not too many vague wordings for services and randomly thrown abbreviations). DONE.
+    
 
 <!-- 
 backlog-list:

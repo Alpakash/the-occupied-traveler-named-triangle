@@ -17,19 +17,24 @@
           </svg>
           Previously clicked color: <strong class="ml-2">{{ previousColor }}</strong>
         </li>
-        <button @click="resetCount">abc</button>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded" @click="resetCount">Reset
+          the clicked counter</button>
       </ul>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, computed } from 'vue';
+import { defineComponent, computed, onMounted } from 'vue';
 import { useStore } from 'vuex';
 
 export default defineComponent({
   setup() {
     const store = useStore();
+
+    onMounted(() => {
+      store.dispatch('fetchCount');
+    });
 
     const count = computed(() => store.state.count);
 
@@ -41,7 +46,11 @@ export default defineComponent({
       store.commit('resetCount');
     }
 
-    return { count, incrementCount, resetCount };
+    const onTriangleClick = () => {
+      store.dispatch('updateCount');
+    };
+
+    return { count, incrementCount, resetCount, onTriangleClick };
   },
   data() {
     return {
@@ -53,7 +62,7 @@ export default defineComponent({
   computed: {
     rectColor() {
       return this.colors[this.colorIndex];
-    }
+    },
   },
   methods: {
     colorChange() {

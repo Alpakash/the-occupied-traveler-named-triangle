@@ -31,24 +31,21 @@ const handleMouseLeave = () => {
 
 <template>
     <h1 class="text-3xl">
-        <div 
-        v-motion-fade
-            @click="explode" 
+        <div v-motion-fade @click="explode"
             class="flex w-full gap-20 overflow-hidden justify-center mt-3 p-2 shadow-lg hover:shadow-xl hover:cursor-help"
             @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave" :class="dynamicClass" :initial="{
                 opacity: 0,
                 y: -140,
-            }" 
-            :enter="{
-                opacity: 1,
-                y: 0,
-                transition: {
-                    delay: 200,
-                    duration: 1500,
-                    type: 'keyframes',
-                    ease: 'easeIn',
-                },
-            }">
+            }" :enter="{
+    opacity: 1,
+    y: 0,
+    transition: {
+        delay: 200,
+        duration: 1500,
+        type: 'keyframes',
+        ease: 'easeIn',
+    },
+}">
             <div class="w-1/8 flex-shrink-0 select-none" v-for="i in 8" :key="i">
                 <slot />
             </div>

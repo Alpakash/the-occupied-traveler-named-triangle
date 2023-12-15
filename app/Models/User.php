@@ -42,4 +42,17 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    /**
+     * Saves the count of a user's request.
+     *
+     * @param mixed $request The request data to be saved.
+     * @return void
+     */
+    public function saveCount($request)
+    {
+        $user = User::find($request->user_id);
+        $user->count = $request->count;
+        $user->save();
+    }
 }

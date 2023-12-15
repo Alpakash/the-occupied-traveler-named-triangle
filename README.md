@@ -109,6 +109,8 @@ Reasons I did make use of this Starter Kit are:
 
 - 15-12-2023, Day 5
     - Add Guidance/explanation and backlog-list to the README file
+    - Added vuex-persistedstate instead of using the state from the database
+    - Got called in-between, without finishing this application... I got through to the next interview round! ;-)
 
 <!-- 
 backlog-list:

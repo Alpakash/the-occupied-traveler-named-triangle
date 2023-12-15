@@ -20,12 +20,13 @@ const backgroundColor = computed(() => {
 <template>
     <div>
         <div class="min-h-screen bg-gray-100" v-motion-fade :class="backgroundColor" :initial="{
-            opacity: 0.4, scale: 1 }" :enter="{
-            opacity: 1, scale: 1, transition: {
-                duration: 300,
-                type: 'keyframes',
-                ease: 'easeIn',
-            }
+            opacity: 0.4, scale: 0.3
+        }" :enter="{
+    opacity: 1, scale: 1, transition: {
+        duration: 300,
+        type: 'keyframes',
+        ease: 'easeIn',
+    }
 }">
             <nav class="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700 relative z-10">
                 <!-- Primary Navigation Menu -->
@@ -157,20 +158,16 @@ const backgroundColor = computed(() => {
             </main>
 
             <!-- Page Footer -->
-            <footer
-            :initial="{
-                    y: 100,
-                }"
-                :enter="{
-                    y: 0,
-                    transition: {
-                        duration: 1000,
-                        type: 'keyframes',
-                        ease: 'easeIn',
-                    },
-                }"
-                v-motion
-                class="fixed bottom-0 transform -translate-x-1/2 dark:bg-blue-900 shadow flex justify-center items-center w-full"
+            <footer :initial="{
+                y: 100,
+            }" :enter="{
+    y: 0,
+    transition: {
+        duration: 1000,
+        type: 'keyframes',
+        ease: 'easeIn',
+    },
+}" v-motion class="fixed bottom-0 transform -translate-x-1/2 dark:bg-blue-900 shadow flex justify-center items-center w-full"
                 v-if="$slots.footer">
                 <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
                     <h1 class="text-2xl font-semibold text-gray-900">

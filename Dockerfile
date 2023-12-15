@@ -2,14 +2,14 @@
 FROM php:8.0-fpm
 
 # Install Node.js dependencies
-RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_21.x | bash -
 RUN apt-get install -y nodejs
 
 # Install Yarn
 RUN npm install -g yarn
 
 # Install PHP and Node.js dependencies
-COPY package.json ./
+COPY package.json /var/www/html
 RUN yarn install
 
 # Install dependencies
@@ -29,7 +29,7 @@ WORKDIR /var/www/html
 
 # Copy the application files to the container
 COPY . /var/www/html
-COPY composer.json composer.lock ./
+COPY composer.json composer.lock /var/www/html/
 
 # Install Composer dependencies
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer

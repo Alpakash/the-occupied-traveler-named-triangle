@@ -23,6 +23,6 @@
         "resources/js/**/*.vue",
         "node_modules/@vueuse/motion",
         "node_modules/@fortawesome/vue-fontawesome",
-        "vendor",
+        "vendor/tightenco/ziggy/src/js/index.d.ts"
     ]
 }

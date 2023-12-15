@@ -109,20 +109,21 @@ Reasons I did make use of this Starter Kit are:
 
 - 15-12-2023, Day 5
     - Add Guidance/explanation and backlog-list to the README file
+    - Add reset button count button
+    - styling of booking page: book a room title etc.
+    - save the data for the user inside the database with vuex
     - Added vuex-persistedstate instead of using the state from the database
     - Got called in-between, without finishing this application... I got through to the next interview round! ;-)
+    - Deploy the application to https://the-occupied-traveler-named-triangle.onrender.com
 
 <!-- 
 backlog-list:
     - Triangle Page
-        - reset button count button
-        - save the data for the user inside the database with vuex
         - make the images a circle and aligned correctly
 
     - Booking page
         - able to book room and cancel booking
         - form functionality, submit form on button click
-        - styling of booking page: book a room title etc.
 
     - Travel Kilometers page
         - Create the endpoints coupled against data in the laravel backend 
@@ -131,20 +132,11 @@ backlog-list:
         - User
             - make the mail verification functioning
             - show the user verification on the travel page underneath the endpoint data
-            
-    - Deploy the application
 -->
+
 ## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects.
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>

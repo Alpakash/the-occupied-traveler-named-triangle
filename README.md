@@ -1,7 +1,7 @@
 # The Occupied Traveler named Triangle
 Making an assignment which checks the occupation, travel info and whilst showing some cool triangles.
 
-# Newly Downloaded and Installed tools I've never really used extensively commercially before :)  
+# Newly Downloaded and Installed tools I've never really used extensively/commercially before :)  
 - Download and install
     - PHP 8.3.0
     - Composer
@@ -16,23 +16,41 @@ Making an assignment which checks the occupation, travel info and whilst showing
     - Tailwind CSS
     - library: [vue-confetti-explosion](https://github.com/valgeirb/vue-confetti-explosion)
 
-# How to Install the application
-    - yarn install
-    - yarn dev
-    - php artisan serve
+# Guidance and explanation
+## Intro
+I've made use of a lot of tools I was not really familiar with or which were a long time ago
+since I've utilized them.
 
-# Guidance
-    - The app lives inside the sub-folders inside the resources folder
-        - js: where the components, types and pages live
-        - app.ts: where the vue app is initiated with help of interia.js 
-    - Routes
-        - There are three routes where the cases will live
-    
+The app showcases my skills to create an full-fledged fullstack application which then is deployed.
+
+I've created this app in 5 days, spending a few hours each, after working hours.
+
+I hope you like the app which tells the story of a traveler named Triangle who is searching for a place to stay.
+
+## Explain
+- The app lives inside the sub-folders inside the resources folder
+    - js: where the components, types and pages live
+    - app.ts: where the vue app is initiated with help of inertia.js 
+- Routes
+    - There are three routes where the cases will live
+
+- Prerequisites
+    - PHP
+    - Laravel
+    - sqlite3
+    - vite
+
+## How to install and run the app
+        - yarn install
+        - yarn dev
+        - php artisan serve
+        - the page can now be visited on `localhost:8000`
+
 # Changelog
  - 11-11-2023, Day 1
     - Setup the repository
     - Installing the tools and software
-    - Added Starters kit: Laravel, VueJs & InteriaJs 
+    - Added Starters kit: Laravel, VueJs & InertiaJs 
 
  - 12-12-2023, Day 2
     - Added a dashboard
@@ -72,7 +90,31 @@ Making an assignment which checks the occupation, travel info and whilst showing
         - Show the first booked spot in green
         - Added room location selector 
 
+- 15-12-2023, Day 5
+    - Add Guidance/explanation and backlog-list to the README file
 
+<!-- 
+backlog-list:
+    - Triangle Page
+        - reset button count button
+        - save the data for the user inside the database with vuex
+        - make the images a circle and aligned correctly
+
+    - Booking page
+        - able to book room and cancel booking
+        - form functionality, submit form on button click
+        - styling of booking page: book a room title etc.
+
+    - Travel Kilometers page
+        - Create the endpoints coupled against data in the laravel backend 
+        - Fetch the endpoints in the frontend to show numbers
+        - Explain the endpoints and why you choose to add those
+        - User
+            - make the mail verification functioning
+            - show the user verification on the travel page underneath the endpoint data
+            
+    - Deploy the application
+-->
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:

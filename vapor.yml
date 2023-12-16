@@ -2,6 +2,7 @@ id: 55545
 name: the-occupied-traveler-named-triangle
 environments:
     production:
+        database: triangledb 
         subnets:
           - subnet-0b455d67c2b6fb0eb
           - subnet-0b11b7220eb3b5b55

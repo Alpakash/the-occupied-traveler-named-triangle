@@ -27,6 +27,15 @@ const incrementCount = () => {
             <Sidebar class="w-4/12 z-10" />
         </div>
         <div class="flex m-8 gap-5 justify-around">
+            <!-- How to add the asset helper for Laravel Vapor to Vue 3: 
+                Vue.mixin({
+                    methods: {
+                        asset: window.Vapor.asset
+                    },
+                });
+
+                <img :src="asset('img/global/logo.svg')"/>
+             -->
             <img src="../../../../public/images/cat1.jpg" alt="Cat 1"
                 class="z-20 object-contain h-50 w-40 transform transition duration-500 ease-in-out hover:scale-110">
             <img src="../../../../public/images/cat2.jpg" alt="Cat 2"

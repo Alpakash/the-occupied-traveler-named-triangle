@@ -127,6 +127,13 @@ Reasons I did make use of this Starter Kit are:
                 - Making use of Laravel Vapor production.env
         - failed to push to prod!
             - "AWS: Error occurred while DescribeSecurityGroups. EC2 Error Code: InvalidGroup.NotFound. EC2 Error Message: The security group 'sg-0aa448f79fef56bf6' does not exist", while I do have the VPC living in the correct region. Weird. I prefer GCP over AWS (because of not too many vague wordings for services and randomly thrown abbreviations). DONE.
+    - Just used Laravel Vapor UI
+            - Created VPC Network, Security Groups and Subnets
+            - Created AWS RDS instance
+            - Failed to get the "/" route working on prod, so.. no homepage!
+            - The CSS files are not working and swimming around somewhere in an S3 bucket or assets folder somewhere
+            - I'm happy to announce... the deployment has happened! Not perfect, but it's there... maybe the login won't work, maybe the css won't load, but.. it's there! Somewhere in the cloud of Laravel Vapor, with a RDS Database connected. The end.
+
     
 
 <!-- 

@@ -3,16 +3,16 @@ name: the-occupied-traveler-named-triangle
 environments:
     production:
         subnets:
-          - subnet-0b485210d1c74baec
-          - subnet-0ac314adb5381b125
+          - subnet-0b455d67c2b6fb0eb
+          - subnet-0b11b7220eb3b5b55
+          - subnet-06fcbe3f41e8dce3d
+          - subnet-0d3a465586b9c69cb
         security-groups:
-          - sg-0aa448f79fef56bf6
+          - sg-04602a0566b2fdb19
         memory: 1024
-        cli-memory: 512
+        cli-memory: 1024
         runtime: 'php-8.2:al2'
         build:
             - 'composer install --no-dev'
             - 'php artisan event:cache'
           # - 'npm ci && npm run build && rm -rf node_modules'
-        deploy:
-            - 'php artisan migrate --force'

@@ -67,6 +67,7 @@ const firstBookedDates = computed(() => {
           {{ room.roomLocation }}
         </option>
       </select>
+      <!-- the CSS of this Datepicker is not being loaded correctly in prod -->
       <DatePicker v-model:value="dates" range />
     </div>
   </AuthenticatedLayout>

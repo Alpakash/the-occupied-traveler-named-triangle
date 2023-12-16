@@ -19,6 +19,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('/update-count', [\App\Http\Controllers\UserController::class, 'saveCount']);
-Route::post('/login', [\App\Http\Controllers\UserController::class, 'login']);
+// Route::post('/login', [\App\Http\Controllers\UserController::class, 'login']);
 
 Route::get('/count', [\App\Http\Controllers\UserController::class, 'getCount']);

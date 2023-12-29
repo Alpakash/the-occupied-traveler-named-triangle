@@ -137,7 +137,8 @@ Reasons I did make use of this Starter Kit are:
     - I'm happy to announce... the deployment has happened!
         -  Not perfect, but it's there... maybe the login won't work, maybe the css won't load, but.. it's there! Somewhere in the cloud of Laravel Vapor, with a RDS Database connected. The end.
         -  ps. login does work in local development environment to test out. In production you can register to get into half-broken application.
-     
+          
+- The Laravel Vapor connection to an AWS DB did cost money although it did claim to be free. So I killed the connection. You just host this thing on your local machine. :D
 
 <!-- 
 backlog-list:
